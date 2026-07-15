@@ -1,0 +1,8 @@
+{
+  "name": "seaweb",
+  "description": "SeaWeb agent-native search + booking rail: SF hotels, attractions, restaurants. Honest labeled results.",
+  "version": "0.13.0",
+  "author": { "name": "SeaWeb", "url": "https://seaweb.tech" },
+  "homepage": "https://seaweb.tech/connect",
+  "mcpServers": "./.mcp.json"
+}

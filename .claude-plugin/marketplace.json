@@ -1,0 +1,24 @@
+{
+  "name": "seaweb",
+  "owner": {
+    "name": "SeaWeb",
+    "email": "seaweb.ai@gmail.com",
+    "url": "https://seaweb.tech"
+  },
+  "metadata": {
+    "description": "SeaWeb — agent-native search with a real booking rail (SF hotels, attractions, restaurants)",
+    "version": "0.13.0"
+  },
+  "plugins": [
+    {
+      "name": "seaweb",
+      "source": "./seaweb",
+      "description": "Search SF hotels, attractions, and restaurants with honest, provenance-labeled results; check availability and request bookings the venue confirms.",
+      "version": "0.13.0",
+      "author": { "name": "SeaWeb", "url": "https://seaweb.tech" },
+      "homepage": "https://seaweb.tech/connect",
+      "keywords": ["search", "travel", "hotels", "restaurants", "booking", "san-francisco", "mcp"],
+      "category": "search"
+    }
+  ]
+}

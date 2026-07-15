@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "seaweb": {
+      "type": "http",
+      "url": "https://api.seaweb.tech/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SEAWEB_API_KEY}"
+      }
+    }
+  }
+}
