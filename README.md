@@ -25,6 +25,25 @@ Treat the API key like a password. Revoke it any time from the dashboard.
 Or on claude.ai: Settings → Plugins → Browse → Add marketplace →
 `https://github.com/aritroBh/seaweb-plugin`.
 
+The bundled `/setup-seaweb` skill walks Claude through connecting and fixing
+auth errors on any surface.
+
+## Claude Cowork, claude.ai, Claude mobile
+
+Cowork sessions run in a remote sandbox — local environment variables never
+reach them, so the plugin's bundled server config authenticates only in
+Claude Code. On Cowork, claude.ai, and mobile use an account-level custom
+connector instead (works everywhere, one-time setup):
+
+Settings → Connectors → Add custom connector →
+
+```text
+https://api.seaweb.tech/mcp/k/sw_your-key-here
+```
+
+The key rides in the URL path (claude.ai strips query strings). OAuth-based
+one-click connect is on the roadmap and will replace the pasted key.
+
 ## Cursor
 
 One-click install:
