@@ -1,0 +1,38 @@
+{
+  "name": "seaweb",
+  "version": "0.13.0",
+  "description": "Agent-native search with a real booking rail: SF hotels, attractions, restaurants. Honest, provenance-labeled results; availability checks and venue-confirmed booking requests.",
+  "author": {
+    "name": "SeaWeb",
+    "url": "https://seaweb.tech"
+  },
+  "homepage": "https://seaweb.tech",
+  "repository": "https://github.com/aritroBh/seaweb-plugin",
+  "license": "MIT",
+  "keywords": [
+    "search",
+    "travel",
+    "hotels",
+    "restaurants",
+    "booking",
+    "san-francisco"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "SeaWeb",
+    "shortDescription": "Search and book SF travel",
+    "longDescription": "Search San Francisco hotels, attractions, and restaurants with honest, provenance-labeled results. Check availability and send booking requests the venue confirms.",
+    "developerName": "SeaWeb",
+    "category": "Travel",
+    "capabilities": ["Write"],
+    "websiteURL": "https://seaweb.tech",
+    "privacyPolicyURL": "https://seaweb.tech/privacy",
+    "termsOfServiceURL": "https://seaweb.tech/terms",
+    "defaultPrompt": [
+      "Find a hotel near Union Square for next weekend",
+      "Book a table for 2 in the Mission on Friday at 19:00",
+      "What attractions are within walking distance of the Ferry Building?"
+    ],
+    "composerIcon": "./assets/logo.png"
+  }
+}

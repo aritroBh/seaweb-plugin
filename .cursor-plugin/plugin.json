@@ -1,0 +1,12 @@
+{
+  "name": "seaweb",
+  "displayName": "SeaWeb",
+  "version": "0.13.0",
+  "description": "Agent-native search with a real booking rail: SF hotels, attractions, restaurants. Honest, provenance-labeled results; availability checks and venue-confirmed booking requests.",
+  "author": { "name": "SeaWeb", "email": "seaweb.ai@gmail.com" },
+  "homepage": "https://seaweb.tech",
+  "repository": "https://github.com/aritroBh/seaweb-plugin",
+  "license": "MIT",
+  "keywords": ["search", "travel", "hotels", "restaurants", "booking", "san-francisco", "mcp"],
+  "logo": "assets/logo.png"
+}

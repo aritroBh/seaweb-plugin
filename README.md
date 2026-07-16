@@ -1,10 +1,10 @@
 # SeaWeb plugin
 
 Agent-native search with a real booking rail — SF hotels, attractions, and
-restaurants, with honest provenance-labeled results. This plugin connects
-Claude to the hosted SeaWeb MCP server.
+restaurants, with honest provenance-labeled results. This repo packages the
+hosted SeaWeb MCP server as a plugin for **Claude Code, Cursor, and Codex**.
 
-## Install
+## Setup (all clients)
 
 1. Mint a free API key at [seaweb.tech](https://seaweb.tech) (Sign in → Generate key).
 2. Export it (add to your shell profile to persist):
@@ -13,17 +13,54 @@ Claude to the hosted SeaWeb MCP server.
    export SEAWEB_API_KEY=sw_your-key-here
    ```
 
-3. In Claude Code:
-
-   ```
-   /plugin marketplace add aritroBh/seaweb-plugin
-   /plugin install seaweb@seaweb
-   ```
-
-   Or on claude.ai: Settings → Plugins → Browse → Add marketplace →
-   `https://github.com/aritroBh/seaweb-plugin`.
-
 Treat the API key like a password. Revoke it any time from the dashboard.
 
-Other ways to connect (claude.ai custom connector URL, ChatGPT developer
-mode, Cursor, Codex, VS Code, Windsurf): https://seaweb.tech/connect
+## Claude Code
+
+```
+/plugin marketplace add aritroBh/seaweb-plugin
+/plugin install seaweb@seaweb
+```
+
+Or on claude.ai: Settings → Plugins → Browse → Add marketplace →
+`https://github.com/aritroBh/seaweb-plugin`.
+
+## Cursor
+
+One-click install:
+
+[Add to Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=seaweb&config=eyJ1cmwiOiJodHRwczovL2FwaS5zZWF3ZWIudGVjaC9tY3AiLCJoZWFkZXJzIjp7IkF1dGhvcml6YXRpb24iOiJCZWFyZXIgWU9VUl9TRUFXRUJfS0VZIn19)
+
+Then replace `YOUR_SEAWEB_KEY` with your key in Cursor Settings → MCP.
+Or add to `~/.cursor/mcp.json` yourself:
+
+```json
+{
+  "mcpServers": {
+    "seaweb": {
+      "url": "https://api.seaweb.tech/mcp",
+      "headers": { "Authorization": "Bearer ${env:SEAWEB_API_KEY}" }
+    }
+  }
+}
+```
+
+## Codex
+
+```sh
+codex plugin marketplace add https://github.com/aritroBh/seaweb-plugin
+codex plugin add seaweb
+```
+
+Or add to `~/.codex/config.toml` yourself:
+
+```toml
+[mcp_servers.seaweb]
+url = "https://api.seaweb.tech/mcp"
+bearer_token_env_var = "SEAWEB_API_KEY"
+```
+
+## Other clients
+
+claude.ai custom connector URL, ChatGPT developer mode, VS Code, Windsurf:
+https://seaweb.tech/connect

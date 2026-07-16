@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "seaweb": {
+      "type": "http",
+      "url": "https://api.seaweb.tech/mcp",
+      "bearer_token_env_var": "SEAWEB_API_KEY"
+    }
+  }
+}
