@@ -1,7 +1,9 @@
 # SeaWeb plugin
 
-Agent-native search with a real booking rail — SF hotels, attractions, and
-restaurants, with honest provenance-labeled results. This repo packages the
+The search engine for AI agents — SF hotels, attractions, and
+restaurants, with honest provenance-labeled results and a
+partner-confirmed request relay (agents send booking requests; the
+partner confirms and charges — SeaWeb never takes payment). This repo packages the
 hosted SeaWeb MCP server as a plugin for **Claude Code, Cursor, and Codex**.
 
 ## Setup (all clients)

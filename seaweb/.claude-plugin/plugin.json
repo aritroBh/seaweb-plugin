@@ -1,6 +1,6 @@
 {
   "name": "seaweb",
-  "description": "SeaWeb agent-native search + booking rail: SF hotels, attractions, restaurants. Honest labeled results.",
+  "description": "SeaWeb agent-native search: SF hotels, attractions, restaurants. Honest labeled results; partner-confirmed request relay.",
   "version": "0.13.0",
   "author": { "name": "SeaWeb", "url": "https://seaweb.tech" },
   "homepage": "https://seaweb.tech/connect",

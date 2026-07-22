@@ -6,7 +6,7 @@
     "url": "https://seaweb.tech"
   },
   "metadata": {
-    "description": "SeaWeb — agent-native search with a real booking rail (SF hotels, attractions, restaurants)",
+    "description": "SeaWeb — agent-native search (SF hotels, attractions, restaurants)",
     "version": "0.13.0"
   },
   "plugins": [

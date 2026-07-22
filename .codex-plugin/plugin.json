@@ -1,7 +1,7 @@
 {
   "name": "seaweb",
   "version": "0.13.0",
-  "description": "Agent-native search with a real booking rail: SF hotels, attractions, restaurants. Honest, provenance-labeled results; availability checks and venue-confirmed booking requests.",
+  "description": "Agent-native search: SF hotels, attractions, restaurants. Honest, provenance-labeled results; availability checks and partner-confirmed booking requests.",
   "author": {
     "name": "SeaWeb",
     "url": "https://seaweb.tech"
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "SeaWeb",
     "shortDescription": "Search and book SF travel",
-    "longDescription": "Search San Francisco hotels, attractions, and restaurants with honest, provenance-labeled results. Check availability and send booking requests the venue confirms.",
+    "longDescription": "Search San Francisco hotels, attractions, and restaurants with honest, provenance-labeled results. Agents send booking requests; the partner confirms and charges — SeaWeb never takes payment.",
     "developerName": "SeaWeb",
     "category": "Travel",
     "capabilities": ["Write"],
